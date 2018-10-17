@@ -1,0 +1,7 @@
+platform-tools
+build-tools;28.0.3
+platforms;android-28
+extras;android;m2repository
+extras;google;m2repository
+extras;m2repository;com;android;support;constraint;constraint-layout;1.0.2
+system-images;android-28;google_apis_playstore;x86
