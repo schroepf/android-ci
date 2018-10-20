@@ -28,6 +28,7 @@ ADD packages.txt ${CI_USER_HOME}
 RUN yes | sdkmanager --licenses
 RUN sdkmanager `cat ~/packages.txt | paste -s -d " "`
 
-RUN avdmanager create avd -n pixel_xl -k "system-images;android-25;google_apis;armeabi-v7a" --device "pixel_xl" --tag "google_apis"
+RUN avdmanager create avd -n pixel_xl_arm -k "system-images;android-25;google_apis;armeabi-v7a" --device "pixel_xl" --tag "google_apis"
+RUN avdmanager create avd -n pixel_xl_x86 -k "system-images;android-28;google_apis_playstore;x86" --device "pixel_xl" --tag "google_apis_playstore"
 
 CMD /bin/bash -l
