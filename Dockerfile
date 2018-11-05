@@ -11,6 +11,7 @@ ARG ANDROID_BUILD_TOOLS="28.0.3"
 ARG ANDROID_SDK_DIR="${CI_USER_HOME}/android-sdk"
 
 ENV ANDROID_HOME="${ANDROID_SDK_DIR}"
+ENV ANDROID_SDK_ROOT="${ANDROID_HOME}"
 ENV PATH="${ANDROID_HOME}/emulator:${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${ANDROID_HOME}/platform-tools"
 
 RUN apt-get --quiet update --yes
